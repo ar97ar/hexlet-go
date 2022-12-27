@@ -1,11 +1,12 @@
 package main
 
 import (
-	"fmt"
+	"github.com/fatih/color"
 	"hello/greeting"
 )
 
 func main() {
-	fmt.Printf(greeting.Hello())
+	c := color.New(color.FgCyan).Add(color.Underline)
+	c.Printf(greeting.Hello())
 
 }
